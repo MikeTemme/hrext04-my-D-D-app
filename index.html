@@ -9,16 +9,211 @@
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
     <script src="app.js"></script>
-
   </head>
+
   <body>
+    <div id="entire-page-container">
+      <div class="block-left">
+      <div class="combat-stats">
+        <h3>Combat Stats</h3>
+        <div class="combat-titles">Initiative <span class="initiative-value">0</span></div>
+          <input placeholder="Current Initiative">
+          <button class="change-initiative">Set</button>
 
-  <input type="text" class="user-input-title" placeholder="Enter the Title">
+        <div class="combat-titles">Armor class <span class="armor-class-value">0</span></div>
+          <input placeholder="Current armor class">
+          <button class="Update">Update</button>
+
+        <div class="combat-titles">Hit points 
+          <span class="current-hit-points-value">20</span> / <span class="max-hit-points-value">20</span>
+        </div>
+          <input placeholder="Damage / Heal input">
+          <button id="damage">Damage</button>
+          <button id="heal">Heal</button>
+
+        <div class="combat-titles">Death saves</div>
+        <div> Success <span class=""> 0 </span>/ 3 
+        </div>
+        <div> Fail 
+          <span> 0 </span> 
+        / 3 
+        </div>
+          <button id="success">Success</button>
+          <button id="fail">Fail</button>
+          <button id="reset">Reset</button>
+
+
+        <div id="combat-title">Hit die<span id="current-hit-die"> 3</span></div>
+        <button id="subtract-hit-die">Use a hit die</button>
+      </div>
+
+
+      <div class="attacks-equipment-and-money">
+        <h3>Attacks, equipment, and money</h3>
+        <div>Attacks</div>
+          <div>Name</div>
+          <div>Attack</div>
+          <div>Damage</div>
+          <div>Damage tpye</div>
+          <div>Initiative</div>
+          <div>Equipement</div>
+          <div>Money</div>
+        <div class="money-labels">CP
+          <span class="initiative-value">300</span>
+          <input placeholder="Write the difference">
+        <button class="up-button">Up</button>
+        <button class="down-button">Down</button>
+        <div>Conversion tool ?</div>
+        </div>
+
+        <div class="money-labels">SP
+          <span class="initiative-value">0</span>
+          <input placeholder="e.g. 101 years, 23 yrs., etc.">
+          <button class="up-button">Up</button>
+          <button class="down-button">Down</button>
+        </div>
+        
+        <div class="money-labels">EP
+          <span class="initiative-value">0</span>
+          <input placeholder="e.g. 101 years, 23 yrs., etc.">
+          <button class="up-button">Up</button>
+          <button class="down-button">Down</button>
+        </div>
+        
+        <div class="money-labels">GP
+          <span class="initiative-value">0</span>
+          <input placeholder="e.g. 101 years, 23 yrs., etc.">
+          <button class="up-button">Up</button>
+          <button class="down-button">Down</button>
+        </div>
+    
+        <div class="money-labels">PP
+          <span class="initiative-value">0</span>
+          <input placeholder="e.g. 101 years, 23 yrs., etc.">
+          <button class="up-button">Up</button>
+          <button class="down-button">Down</button>
+        </div>
+      </div>
+      </div>
+      <div class="block-center">
+      <div class="inventory">
+        <h3>Inventory</h3>
+        <input placeholder="Add your items yo!">
+        <button class="Update">Add Item</button>
+        <div class="inventory-list"></div>
+      </div>
+      </div>
+      <div class="block-right">
+      <div class="statuses">
+        <h3>Status</h3>
+        <input type="checkbox"><label class="">Blinded</label></br>
+        <input type="checkbox"><label class="">Charmed</label></br>
+        <input type="checkbox"><label class="">Deafened</label></br>
+        <input type="checkbox"><label class="">Frightened</label></br>
+        <input type="checkbox"><label class="">Grappled</label></br>
+        <input type="checkbox"><label class="">Incapacitated</label></br>
+        <input type="checkbox"><label class="">Inspiration</label></br>
+        <input type="checkbox"><label class="">Invisible</label></br>
+        <input type="checkbox"><label class="">Paralyzed</label></br>
+        <input type="checkbox"><label class="">Pertrified</label></br>
+        <input type="checkbox"><label class="">Poisoned</label></br>
+        <input type="checkbox"><label class="">Prone</label></br>
+        <input type="checkbox"><label class="">Restrained</label></br>
+        <input type="checkbox"><label class="">Stunned</label></br>
+        <input type="checkbox"><label class="">Unconcious</label></br>
+      </div>
+
+      <div class="spells">
+        <h3>Spells</h3>
+        <div class="spell-sections">
+          <div>Availible spell slots</div>
+          <div>Spell lvl 1</div>
+            <input placeholder="number of spell slots used">
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button>
+            <button class="reset-spell-slots">Reset</button>
+          <div>Spell lvl 2</div>
+            <input placeholder="number of spell slots used">
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button>
+            <button class="reset-spell-slots">Reset</button>
+          <div>Spell lvl 3 <span class="current-hit-points-value">20</span> / <span class="current-hit-points-value">20</span></div>
+            <input placeholder="number of spell slots used">
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button>
+            <button class="reset-spell-slots">Reset</button>
+          <div>Spell lvl 4</div>
+            <input placeholder="number of spell slots used">
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button>
+            <button class="reset-spell-slots">Reset</button>
+          <div>Spell lvl 5</div>
+            <input placeholder="number of spell slots used">
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button>
+            <button class="reset-spell-slots">Reset</button>
+          <div>Spell lvl 6</div>
+            <input placeholder="number of spell slots used">
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button>
+            <button class="reset-spell-slots">Reset</button>
+          <div>Spell lvl 7</div>
+            <input placeholder="number of spell slots used">
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button>
+            <button class="reset-spell-slots">Reset</button>
+          <div>Spell lvl 8</div>
+            <input placeholder="number of spell slots used">
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button>
+            <button class="reset-spell-slots">Reset</button>
+          <div>Spell lvl 9</div>
+            <input placeholder="number of spell slots used">
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button>
+            <button class="reset-spell-slots">Reset</button>
+        </div>
+        <div class="spell-sections">
+          <button id="prepared-spell-list"  >This is a scroll bar for the prepared spells</button>
+        </div>
+        <div class="spell-sections" >This will be where the list of spells are</div>
+      </div>
+      </div>
+    </div>
+
+
+<!--  
+- armor class
+        - initiative
+        - HP
+        - death saves
+        - speed (slow/rough terrain button ?)
+        - hit die (Long rest button ?)
+        - inspiration
+- attacks + equipement + money below CS bottom left
+        - attacks
+          - name, attack bonus, damage, dmg type
+        - equipement
+          - armor / hands ect
+        - money
+          - 5 boxes
+                - inventory middle
+        - scroller for weight
+        - search bar for items
+        - tab menus for looking for items
+      - spell slots / prepared spells bottom right
+        - prepared spell number slots
+          - scroller or buttons
+        - drop-down for prepped spells
+            - drop-down for spell list
+              - drop down for preparing spells
+                - drop down for spell description
+
+
+
+ <input type="text" class="user-input-title" placeholder="Enter the Title">
   <textarea class="user-input-body" placeholder="Enter the body of text"></textarea>
-
   <button class="add-text-btn">add text</button>
-  <button class="del-text-btn">delete text</button>
-
-  <div class="display"></div>
+  <button class="del-text-btn">delete text</button> -->
   </body>
 </html>

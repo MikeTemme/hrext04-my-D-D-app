@@ -1,0 +1,60 @@
+body {
+	background-color: #d9dce0;
+}
+
+div, input, h3, #subtract-hit-die, #success {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.combat-stats {
+	background-color: white;
+	width: 400px;
+
+    border-style: solid;
+	margin-bottom: 5px;
+}
+
+.attacks-equipment-and-money {
+	background-color: white;
+	width: 400px;
+ 
+    border-style: solid;
+	margin-bottom: 5px;
+}
+
+.inventory {
+	background-color: white;
+	width: 400px;
+	border-style: solid;
+	margin-bottom: 5px;
+	height: 105vh;
+}
+
+.statuses {
+	background-color: white;
+	width: 400px;
+	border-style: solid;
+	margin-bottom: 5px;
+}
+
+.spells {
+	background-color: #d9dce0;
+	width: 400px;
+	border-style: solid;
+	margin-bottom: 20px;
+}
+.spell-sections {
+	background-color: white;
+	width: 350px;
+	border-style: solid;
+	margin-bottom: 20px;
+}
+#prepared-spell-list {
+	border-style: solid;
+	margin: 4px;
+}
+.block-left, .block-center, .block-right{
+    float:left;
+    padding:0px 20px;
+}

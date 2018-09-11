@@ -48,7 +48,47 @@
 
 -A
 - (6) Fix the layout(html)
+  - what's on the in session page
+    - inspiration, combat stats, attacks + equipment, inventory, spell slots / spells, (weight of items), (hunger), exhaustion
+      - combot stats top left box
+        - armor class
+        - initiative
+        - HP
+        - death saves
+        - speed (slow/rough terrain button ?)
+        - hit die (Long rest button ?)
+        - inspiration
+      - attacks + equipement + money below CS bottom left
+        - attacks
+          - name, attack bonus, damage, dmg type
+        - equipement
+          - armor / hands ect
+        - money
+          - 5 boxes
+      - inventory middle
+        - scroller for weight
+        - search bar for items
+        - tab menus for looking for items
+      - exhaustion top right
+        - changes to exaustion (up/down buttons)
+        - hunger 
+      - spell slots / prepared spells bottom right
+        - prepared spell number slots
+          - scroller or buttons
+        - drop-down for prepped spells
+            - drop-down for spell list
+              - drop down for preparing spells
+                - drop down for spell description
+  - what's on character page 
+    - name, abilities, skills, savings throws, proficiency bonus, character info, proficiencies + languages + features + traits,
+  - lots of boxes
+    - photos of boxes inside of containers for items
+    - how many containers ?
+      - 
 - (3) change font
+  - size the boxes
+  - add a border to the boxes
+    - choose border types for different boxes
 - (3) color the page
 
 -B
@@ -75,3 +115,5 @@
 - (4) login
 - (7) options page 
 - (5) format the display of the items in a list
+
+

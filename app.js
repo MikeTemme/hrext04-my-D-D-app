@@ -62,4 +62,31 @@ $(document).ready(function() {
 
 
 
+<span class="current-hit-points-value">20</span>
+
 });
+
+
+let current = 0;
+
+function damageHpPool(damageValue) {
+  current -= damageValue;
+  updateHPView()
+}
+function healHpPool(healValue) {
+  current += healValue;
+  updateHPView()
+}
+
+function updateHPView() {
+  $('#hpdisplay').setHTML(`${current} / ${max}`)
+}
+
+
+
+
+
+
+
+
+
