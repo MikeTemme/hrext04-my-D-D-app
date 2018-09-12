@@ -2,14 +2,13 @@ body {
 	background-color: #d9dce0;
 }
 
-div, input, h3, #subtract-hit-die, #success {
+div, input, h3, #subtract-hit-die, #success, button {
 	margin-bottom: 5px;
 	margin-top: 5px;
 	margin-left: 10px;
 }
 .combat-stats {
 	background-color: white;
-	width: 400px;
 
     border-style: solid;
 	margin-bottom: 5px;
@@ -17,7 +16,6 @@ div, input, h3, #subtract-hit-die, #success {
 
 .attacks-equipment-and-money {
 	background-color: white;
-	width: 400px;
  
     border-style: solid;
 	margin-bottom: 5px;
@@ -25,7 +23,6 @@ div, input, h3, #subtract-hit-die, #success {
 
 .inventory {
 	background-color: white;
-	width: 400px;
 	border-style: solid;
 	margin-bottom: 5px;
 	height: 105vh;
@@ -33,20 +30,17 @@ div, input, h3, #subtract-hit-die, #success {
 
 .statuses {
 	background-color: white;
-	width: 400px;
 	border-style: solid;
 	margin-bottom: 5px;
 }
 
 .spells {
 	background-color: #d9dce0;
-	width: 400px;
 	border-style: solid;
 	margin-bottom: 20px;
 }
 .spell-sections {
 	background-color: white;
-	width: 350px;
 	border-style: solid;
 	margin-bottom: 20px;
 }
@@ -55,6 +49,16 @@ div, input, h3, #subtract-hit-die, #success {
 	margin: 4px;
 }
 .block-left, .block-center, .block-right{
-    float:left;
-    padding:0px 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+    width: 33%
+}
+* {
+	box-sizing: border-box;
+}
+.inner-block-left, .inner-block-right{
+	display: inline-block;
+    vertical-align: top;
+    width: 40%;
 }

@@ -17,9 +17,11 @@
       <div class="block-left">
       <div class="combat-stats">
         <h3>Combat Stats</h3>
-        <div class="combat-titles">Initiative <span class="initiative-value">0</span></div>
-          <input placeholder="Current Initiative">
-          <button class="change-initiative">Set</button>
+        <div id ="initiative-value" class="combat-titles">Initiative 
+          <span class="initiative-value">0  </span>
+        </div>
+          <input id="initiative-box" placeholder="Current Initiative">
+          <button id="change-initiative">Set</button>
 
         <div class="combat-titles">Armor class <span class="armor-class-value">0</span></div>
           <input placeholder="Current armor class">
@@ -107,6 +109,7 @@
       <div class="block-right">
       <div class="statuses">
         <h3>Status</h3>
+        <div class="inner-block-left">
         <input type="checkbox"><label class="">Blinded</label></br>
         <input type="checkbox"><label class="">Charmed</label></br>
         <input type="checkbox"><label class="">Deafened</label></br>
@@ -115,6 +118,8 @@
         <input type="checkbox"><label class="">Incapacitated</label></br>
         <input type="checkbox"><label class="">Inspiration</label></br>
         <input type="checkbox"><label class="">Invisible</label></br>
+        </div>
+        <div class="inner-block-right">
         <input type="checkbox"><label class="">Paralyzed</label></br>
         <input type="checkbox"><label class="">Pertrified</label></br>
         <input type="checkbox"><label class="">Poisoned</label></br>
@@ -122,57 +127,44 @@
         <input type="checkbox"><label class="">Restrained</label></br>
         <input type="checkbox"><label class="">Stunned</label></br>
         <input type="checkbox"><label class="">Unconcious</label></br>
+        </div>
       </div>
 
       <div class="spells">
         <h3>Spells</h3>
         <div class="spell-sections">
           <div>Availible spell slots</div>
-          <div>Spell lvl 1</div>
-            <input placeholder="number of spell slots used">
+          <div class="inner-block-left">
+          <label>Spell lvl 1 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button></br>
+          <label>Spell lvl 2 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button></br>
+          <label>Spell lvl 3 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button></br>
+          <label>Spell lvl 4 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
             <button class="spell-slot-up">Up</button>
             <button class="spell-slot-down">Down</button>
-            <button class="reset-spell-slots">Reset</button>
-          <div>Spell lvl 2</div>
-            <input placeholder="number of spell slots used">
+          <label>Spell lvl 5 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
             <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button>
-            <button class="reset-spell-slots">Reset</button>
-          <div>Spell lvl 3 <span class="current-hit-points-value">20</span> / <span class="current-hit-points-value">20</span></div>
-            <input placeholder="number of spell slots used">
+            <button class="spell-slot-down">Down</button></br>
+        </div>
+        <div class="inner-block-right">
+          <label>Spell lvl 6 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
             <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button>
-            <button class="reset-spell-slots">Reset</button>
-          <div>Spell lvl 4</div>
-            <input placeholder="number of spell slots used">
+            <button class="spell-slot-down">Down</button></br>
+          <label>Spell lvl 7 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
             <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button>
-            <button class="reset-spell-slots">Reset</button>
-          <div>Spell lvl 5</div>
-            <input placeholder="number of spell slots used">
+            <button class="spell-slot-down">Down</button></br>
+          <label>Spell lvl 8 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
             <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button>
-            <button class="reset-spell-slots">Reset</button>
-          <div>Spell lvl 6</div>
-            <input placeholder="number of spell slots used">
+            <button class="spell-slot-down">Down</button></br>
+          <label>Spell lvl 9 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
             <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button>
-            <button class="reset-spell-slots">Reset</button>
-          <div>Spell lvl 7</div>
-            <input placeholder="number of spell slots used">
-            <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button>
-            <button class="reset-spell-slots">Reset</button>
-          <div>Spell lvl 8</div>
-            <input placeholder="number of spell slots used">
-            <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button>
-            <button class="reset-spell-slots">Reset</button>
-          <div>Spell lvl 9</div>
-            <input placeholder="number of spell slots used">
-            <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button>
-            <button class="reset-spell-slots">Reset</button>
+            <button class="spell-slot-down">Down</button></br>
+        </div>
         </div>
         <div class="spell-sections">
           <button id="prepared-spell-list"  >This is a scroll bar for the prepared spells</button>
@@ -183,36 +175,9 @@
     </div>
 
 
-<!--  
-- armor class
-        - initiative
-        - HP
-        - death saves
-        - speed (slow/rough terrain button ?)
-        - hit die (Long rest button ?)
-        - inspiration
-- attacks + equipement + money below CS bottom left
-        - attacks
-          - name, attack bonus, damage, dmg type
-        - equipement
-          - armor / hands ect
-        - money
-          - 5 boxes
-                - inventory middle
-        - scroller for weight
-        - search bar for items
-        - tab menus for looking for items
-      - spell slots / prepared spells bottom right
-        - prepared spell number slots
-          - scroller or buttons
-        - drop-down for prepped spells
-            - drop-down for spell list
-              - drop down for preparing spells
-                - drop down for spell description
 
 
-
- <input type="text" class="user-input-title" placeholder="Enter the Title">
+<!--  <input type="text" class="user-input-title" placeholder="Enter the Title">
   <textarea class="user-input-body" placeholder="Enter the body of text"></textarea>
   <button class="add-text-btn">add text</button>
   <button class="del-text-btn">delete text</button> -->
