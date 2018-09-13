@@ -12,61 +12,43 @@
   </head>
 
 <body>
-<button></button>
-    <div id="entire-page-container">
-      <div class="block-left">
-      <div class="combat-stats">
-        <h3>Combat Stats</h3>
-        <div id ="initiative-value" class="combat-titles">Initiative 
-          <span class="initiative-value">0  </span>
-        </div>
-          <input id="initiative-box" placeholder="Current Initiative">
-          <button id="change-initiative">Set</button>
+  <div id="entire-page-container">
+    <div id="combat-stats-container">
+    <!-- <div class="block-left"> -->
+<!--       <div class="combat-stats"> -->
+      <h3 class="titles">Combat Stats</h3>
+      <div>Initiative <span class="initiative-set-value">0</span></div>
+      <input id="initiative-box" placeholder="Input Initiative">
+      <button id="set-initiative">Set</button>
+    
+      <div class="combat-titles">Armor class <span class="armor-class-value">0</span></div>
+      <input placeholder="Change Armor Class">
+      <button class="change-ac">Change AC</button>
 
-        <div class="combat-titles">Armor class <span class="armor-class-value">0</span></div>
-          <input placeholder="Current armor class">
-          <button class="Update">Update</button>
+      <div class="hp">Hit points <span class="current-hp-value">20</span> / <span class="max-hp-value">20</span></div>
+      <input placeholder="Damage / Heal Input">
+      <button>Damage</button>
+      <button>Heal</button>
 
-        <div class="combat-titles">Hit points 
-          <span class="current-hit-points-value">20</span> / <span class="max-hit-points-value">20</span>
-        </div>
-          <input placeholder="Damage / Heal input">
-          <button id="damage">Damage</button>
-          <button id="heal">Heal</button>
-
-        <div class="combat-titles">Death saves</div>
-        <div> Success <span class=""> 0 </span>/ 3 
-        </div>
-        <div> Fail 
-          <span> 0 </span> 
-        / 3 
-        </div>
-          <button id="success">Success</button>
-          <button id="fail">Fail</button>
-          <button id="reset">Reset</button>
+      <div>Death saves</div>
+      <div>Success <span>0</span> / <span>3</span> </div>
+      <div>Fail <span>0</span> / <span>3</span></div>
+      <button id="ds-success">Success</button>
+      <button id="ds-fail">Fail</button>
+      <button id="ds-reset">Reset</button>
+      <div>Hit die <span id="current-hit-die">3</span></div>
+      <button id="use-a-hit-die">Use a hit die</button>
+    </div>
 
 
-        <div id="combat-title">Hit die<span id="current-hit-die"> 3</span></div>
-        <button id="subtract-hit-die">Use a hit die</button>
-      </div>
-
-
-      <div class="attacks-equipment-and-money">
-        <h3>Attacks, equipment, and money</h3>
-        <div>Attacks</div>
-          <div>Name</div>
-          <div>Attack</div>
-          <div>Damage</div>
-          <div>Damage tpye</div>
-          <div>Initiative</div>
-          <div>Equipement</div>
-          <div>Money</div>
-        <div class="money-labels">CP
-          <span class="initiative-value">300</span>
-          <input placeholder="Write the difference">
-        <button class="up-button">Up</button>
-        <button class="down-button">Down</button>
-        <div>Conversion tool ?</div>
+    <div id="attacks-equipment-and-money-container">
+      <h3 class="titles">Attacks, equipment, and money</h3>
+<!--  -->
+      <div>CP <span">300</span>
+      <input placeholder="Write the difference">
+      <button class="up-button">Up</button>
+      <button class="down-button">Down</button>
+      <div>Conversion tool ?</div>
         </div>
 
         <div class="money-labels">SP
@@ -100,16 +82,17 @@
       </div>
       <div class="block-center">
       <div class="inventory">
-        <h3>Inventory</h3>
+        <h3 class="titles">Inventory</h3>
         <input placeholder="Add your items yo!">
         <button class="Update">Add Item</button>
         <div class="inventory-list"></div>
       </div>
       </div>
-      <div class="block-right">
-      <div class="statuses">
-        <h3>Status</h3>
-        <div class="inner-block-left">
+
+    <div id="statuses-container">
+<!--     <div class="statuses"> -->
+      <h3 class="titles">Status</h3>
+      <div class="content-blocking-left">
         <input type="checkbox"><label class="">Blinded</label></br>
         <input type="checkbox"><label class="">Charmed</label></br>
         <input type="checkbox"><label class="">Deafened</label></br>
@@ -118,8 +101,8 @@
         <input type="checkbox"><label class="">Incapacitated</label></br>
         <input type="checkbox"><label class="">Inspiration</label></br>
         <input type="checkbox"><label class="">Invisible</label></br>
-        </div>
-        <div class="inner-block-right">
+      </div>
+      <div class="content-blocking-right">
         <input type="checkbox"><label class="">Paralyzed</label></br>
         <input type="checkbox"><label class="">Pertrified</label></br>
         <input type="checkbox"><label class="">Poisoned</label></br>
@@ -127,52 +110,59 @@
         <input type="checkbox"><label class="">Restrained</label></br>
         <input type="checkbox"><label class="">Stunned</label></br>
         <input type="checkbox"><label class="">Unconcious</label></br>
-        </div>
-      </div>
-
-      <div class="spells">
-        <h3>Spells</h3>
-        <div class="spell-sections">
-          <div>Availible spell slots</div>
-          <div class="inner-block-left">
-          <label>Spell lvl 1 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-            <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button></br>
-          <label>Spell lvl 2 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-            <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button></br>
-          <label>Spell lvl 3 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-            <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button></br>
-          <label>Spell lvl 4 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-            <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button>
-          <label>Spell lvl 5 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-            <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button></br>
-        </div>
-        <div class="inner-block-right">
-          <label>Spell lvl 6 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-            <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button></br>
-          <label>Spell lvl 7 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-            <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button></br>
-          <label>Spell lvl 8 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-            <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button></br>
-          <label>Spell lvl 9 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-            <button class="spell-slot-up">Up</button>
-            <button class="spell-slot-down">Down</button></br>
-        </div>
-        </div>
-        <div class="spell-sections">
-          <button id="prepared-spell-list"  >This is a scroll bar for the prepared spells</button>
-        </div>
-        <div class="spell-sections" >This will be where the list of spells are</div>
-      </div>
       </div>
     </div>
+
+
+    <div id="spells-container">
+      <h3 class="titles">Spells</h3>
+      <div class="content">
+        <div>Availible spell slots</div>
+        <div class="content-blocking-left">
+          <label>Spell lvl 1 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+          <button class="spell-slot-up">Up</button>
+          <button class="spell-slot-down">Down</button></br>
+       
+          <label>Spell lvl 2 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+          <button class="spell-slot-up">Up</button>
+          <button class="spell-slot-down">Down</button></br>
+        
+          <label>Spell lvl 3 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+          <button class="spell-slot-up">Up</button>
+          <button class="spell-slot-down">Down</button></br>
+       
+          <label>Spell lvl 4 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+          <button class="spell-slot-up">Up</button>
+          <button class="spell-slot-down">Down</button></br>
+       
+          <label>Spell lvl 5 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+          <button class="spell-slot-up">Up</button>
+          <button class="spell-slot-down">Down</button></br>
+        </div>
+
+        <div class="content-blocking-right">
+          <label>Spell lvl 6 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+          <button class="spell-slot-up">Up</button>
+          <button class="spell-slot-down">Down</button></br>
+      
+          <label>Spell lvl 7 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+          <button class="spell-slot-up">Up</button>
+          <button class="spell-slot-down">Down</button></br>
+      
+          <label>Spell lvl 8 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+          <button class="spell-slot-up">Up</button>
+          <button class="spell-slot-down">Down</button></br>
+      
+          <label>Spell lvl 9 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+          <button class="spell-slot-up">Up</button>
+          <button class="spell-slot-down">Down</button></br>
+        </div>
+        <button id="prepared-spell-list"  >This is a scroll bar for the prepared spells</button></br>
+        <button>This will be where the list of spells are</button>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -183,3 +173,53 @@
   <button class="del-text-btn">delete text</button> -->
   </body>
 </html>
+
+
+
+
+<!-- <table>
+
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+        <div>Attacks</div>
+          <div>Name</div>
+          <div>Attack</div>
+          <div>Damage</div>
+          <div>Damage tpye</div>
+          <div>Initiative</div>
+          <div>Equipement</div>
+          <div>Money</div> -->

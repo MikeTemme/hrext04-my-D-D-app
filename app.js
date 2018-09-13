@@ -32,12 +32,13 @@ $(document).ready(function() {
 // console.log(typeof localStorage.initiative)
 // console.log(localStorage.initiative[localStorage.initiative.length-1])
 
-// $('.initiative-value').text(localStorage.initiative);
-// $("#change-initiative").on("click", function(){
-//   let initiativeValue = $("#initiative-box").val();
-//   $('.initiative-value').text(initiativeValue);
-//   localStorage.initiative = initiativeValue
-// });
+$('.initiative-value').text(localStorage.initiative);
+$("#change-initiative").on("click", function(){
+  let initiativeValue = $("#initiative-box").val();
+  $('.initiative-value').text(initiativeValue);
+  localStorage.initiative = initiativeValue
+  $('#initiative-box').val('')
+});
 
    // TODO add back in later
    // $(".user-input").on("keyup", function(){

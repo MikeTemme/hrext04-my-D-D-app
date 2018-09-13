@@ -2,21 +2,33 @@ body {
 	background-color: #d9dce0;
 }
 
+/*Border around all the containers */
+#spells-container, #statuses-container {
+	border-style: solid;
+/*	margin-bottom: 5px;*/
+}
+
+/*.titles{
+	text-align: center;
+	font-size: 30px;
+};*/
+
+/* Adding some spacing for the text in all the content sections */
 div, input, h3, #subtract-hit-die, #success, button {
 	margin-bottom: 5px;
 	margin-top: 5px;
 	margin-left: 10px;
 }
+
+/* Adding styling the the containers */
 .combat-stats {
 	background-color: white;
-
     border-style: solid;
 	margin-bottom: 5px;
 }
 
 .attacks-equipment-and-money {
 	background-color: white;
- 
     border-style: solid;
 	margin-bottom: 5px;
 }
@@ -34,31 +46,45 @@ div, input, h3, #subtract-hit-die, #success, button {
 	margin-bottom: 5px;
 }
 
-.spells {
-	background-color: #d9dce0;
-	border-style: solid;
-	margin-bottom: 20px;
-}
-.spell-sections {
-	background-color: white;
-	border-style: solid;
-	margin-bottom: 20px;
-}
+.content{
+		margin-bottom: 5px;
+			background-color: white;
+};
+
+
 #prepared-spell-list {
 	border-style: solid;
 	margin: 4px;
 }
-.block-left, .block-center, .block-right{
+
+/* Aligning the containers on the page */
+.block-left, .block-center, #statuses-container, #spells-container{
     display: inline-block;
     vertical-align: top;
     margin: 0px;
     width: 33%
 }
+
 * {
 	box-sizing: border-box;
 }
-.inner-block-left, .inner-block-right{
+
+/* Aligning the content text */
+.left-blocking, .right-blocking{
 	display: inline-block;
     vertical-align: top;
     width: 40%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    align-self: ;
+    width: 92%;
+}
+
+td, th {
+    border: 1px solid #d9dce0;
+    text-align: left;
+    padding: 8px;
 }
