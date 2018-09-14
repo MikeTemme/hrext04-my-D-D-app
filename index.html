@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8">
-    <title>My First CRUD App</title>
+    <title>My Best d&d app</title>
     <link rel="stylesheet" href="app.css">
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
@@ -13,156 +13,167 @@
 
 <body>
   <div id="entire-page-container">
-    <div id="combat-stats-container">
-    <!-- <div class="block-left"> -->
-<!--       <div class="combat-stats"> -->
-      <h3 class="titles">Combat Stats</h3>
-      <div>Initiative <span class="initiative-set-value">0</span></div>
-      <input id="initiative-box" placeholder="Input Initiative">
-      <button id="set-initiative">Set</button>
-    
-      <div class="combat-titles">Armor class <span class="armor-class-value">0</span></div>
-      <input placeholder="Change Armor Class">
-      <button class="change-ac">Change AC</button>
+    <div class="page-blocking-left">
+      <div class="combat-stats-container" >
+      <!-- <div class="block-left"> -->
+  <!--       <div class="combat-stats"> -->
+        <h3>Combat Stats</h3>
+        <div class="content">
+          <div>Initiative <span class="initiative-set-value">0</span></div>
+          <input id="initiative-box" placeholder="Input Initiative">
+          <button id="set-initiative">Set</button>
+      
+          <div>Armor class <span>0</span></div>
+          <input placeholder="Change Armor Class">
+          <button>Change AC</button>
 
-      <div class="hp">Hit points <span class="current-hp-value">20</span> / <span class="max-hp-value">20</span></div>
-      <input placeholder="Damage / Heal Input">
-      <button>Damage</button>
-      <button>Heal</button>
+          <div>Hit points <span class="current-hp-value">20</span> / <span class="max-hp-value">20</span></div>
+          <input placeholder="Damage / Heal Input">
+          <button>Damage</button>
+          <button>Heal</button>
 
-      <div>Death saves</div>
-      <div>Success <span>0</span> / <span>3</span> </div>
-      <div>Fail <span>0</span> / <span>3</span></div>
-      <button id="ds-success">Success</button>
-      <button id="ds-fail">Fail</button>
-      <button id="ds-reset">Reset</button>
-      <div>Hit die <span id="current-hit-die">3</span></div>
-      <button id="use-a-hit-die">Use a hit die</button>
-    </div>
-
-
-    <div id="attacks-equipment-and-money-container">
-      <h3 class="titles">Attacks, equipment, and money</h3>
-<!--  -->
-      <div>CP <span">300</span>
-      <input placeholder="Write the difference">
-      <button class="up-button">Up</button>
-      <button class="down-button">Down</button>
-      <div>Conversion tool ?</div>
-        </div>
-
-        <div class="money-labels">SP
-          <span class="initiative-value">0</span>
-          <input placeholder="e.g. 101 years, 23 yrs., etc.">
-          <button class="up-button">Up</button>
-          <button class="down-button">Down</button>
-        </div>
-        
-        <div class="money-labels">EP
-          <span class="initiative-value">0</span>
-          <input placeholder="e.g. 101 years, 23 yrs., etc.">
-          <button class="up-button">Up</button>
-          <button class="down-button">Down</button>
-        </div>
-        
-        <div class="money-labels">GP
-          <span class="initiative-value">0</span>
-          <input placeholder="e.g. 101 years, 23 yrs., etc.">
-          <button class="up-button">Up</button>
-          <button class="down-button">Down</button>
-        </div>
-    
-        <div class="money-labels">PP
-          <span class="initiative-value">0</span>
-          <input placeholder="e.g. 101 years, 23 yrs., etc.">
-          <button class="up-button">Up</button>
-          <button class="down-button">Down</button>
+          <div>Death saves</div>
+          <div>Success <span>0</span> / <span>3</span> </div>
+          <div>Fail <span>0</span> / <span>3</span></div>
+          <button id="ds-success">Success</button>
+          <button id="ds-fail">Fail</button>
+          <button id="ds-reset">Reset</button>
+          <div>Hit die <span id="current-hit-die">3</span></div>
+          <button id="use-a-hit-die">Use a hit die</button>
         </div>
       </div>
-      </div>
-      <div class="block-center">
-      <div class="inventory">
-        <h3 class="titles">Inventory</h3>
-        <input placeholder="Add your items yo!">
-        <button class="Update">Add Item</button>
-        <div class="inventory-list"></div>
-      </div>
-      </div>
 
-    <div id="statuses-container">
-<!--     <div class="statuses"> -->
-      <h3 class="titles">Status</h3>
-      <div class="content-blocking-left">
-        <input type="checkbox"><label class="">Blinded</label></br>
-        <input type="checkbox"><label class="">Charmed</label></br>
-        <input type="checkbox"><label class="">Deafened</label></br>
-        <input type="checkbox"><label class="">Frightened</label></br>
-        <input type="checkbox"><label class="">Grappled</label></br>
-        <input type="checkbox"><label class="">Incapacitated</label></br>
-        <input type="checkbox"><label class="">Inspiration</label></br>
-        <input type="checkbox"><label class="">Invisible</label></br>
-      </div>
-      <div class="content-blocking-right">
-        <input type="checkbox"><label class="">Paralyzed</label></br>
-        <input type="checkbox"><label class="">Pertrified</label></br>
-        <input type="checkbox"><label class="">Poisoned</label></br>
-        <input type="checkbox"><label class="">Prone</label></br>
-        <input type="checkbox"><label class="">Restrained</label></br>
-        <input type="checkbox"><label class="">Stunned</label></br>
-        <input type="checkbox"><label class="">Unconcious</label></br>
+
+      <div class="attacks-equipment-and-money-container">
+        <h3>Attacks, equipment, and money</h3>
+        <div class="content">
+
+          <div>PP <span id="pp-value">30</span>  
+            <input id="pp-box" placeholder="Add or Convert">
+            <button>Income Up</button>
+            <button>Income Down</button>
+            <button>x10 Down</button>
+          </div>
+
+          <div>GP <span id="gp-value">100</span>    
+            <input id="gp-box" placeholder="Add or Convert">
+            <button>Income Up</button>
+            <button>Income Down</button>
+            <button>/10 Up</button>
+            <button>x2 Down</button>
+          </div>
+          
+          <div>EP <span id="ep-value">300</span>
+            <input id="ep-box" placeholder="Add or Convert">
+            <button>Income Up</button>
+            <button>Income Down</button>
+            <button>/2 Up</button>
+            <button>x5 Down</button>
+          </div>
+          
+          <div>SP <span id="sp-value">300</span>
+            <input id="sp-box" placeholder="Add or Convert">
+            <button>Income Up</button>
+            <button id="stuff">Income Down</button>
+            <button>/5 Up</button>
+            <button>x10 Down</button>
+          </div>
+          
+          <div>CP <span id="cp-value">350</span>
+            <input id="cp-box"placeholder="Add or Convert">
+            <button>Income Up</button>
+            <button>Income Down</button>
+            <button>/10 Down</button>
+          </div>
+
+        </div>
       </div>
     </div>
 
+    <div class="page-blocking-center">
+      <div class="inventory-container">
+        <h3>Inventory</h3>
+        <div class="content">
+          <input placeholder="Add your items yo!">
+          <button>Add Item</button>
+        </div>
+      </div>
+    </div>
 
-    <div id="spells-container">
-      <h3 class="titles">Spells</h3>
-      <div class="content">
-        <div>Availible spell slots</div>
+    <div class="page-blocking-right">
+      <div class="statuses-container">
+        <h3>Status</h3>
         <div class="content-blocking-left">
-          <label>Spell lvl 1 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-          <button class="spell-slot-up">Up</button>
-          <button class="spell-slot-down">Down</button></br>
-       
-          <label>Spell lvl 2 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-          <button class="spell-slot-up">Up</button>
-          <button class="spell-slot-down">Down</button></br>
-        
-          <label>Spell lvl 3 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-          <button class="spell-slot-up">Up</button>
-          <button class="spell-slot-down">Down</button></br>
-       
-          <label>Spell lvl 4 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-          <button class="spell-slot-up">Up</button>
-          <button class="spell-slot-down">Down</button></br>
-       
-          <label>Spell lvl 5 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-          <button class="spell-slot-up">Up</button>
-          <button class="spell-slot-down">Down</button></br>
+          <input type="checkbox"><label class="">Blinded</label></br>
+          <input type="checkbox"><label class="">Charmed</label></br>
+          <input type="checkbox"><label class="">Deafened</label></br>
+          <input type="checkbox"><label class="">Frightened</label></br>
+          <input type="checkbox"><label class="">Grappled</label></br>
+          <input type="checkbox"><label class="">Incapacitated</label></br>
+          <input type="checkbox"><label class="">Inspiration</label></br>
+          <input type="checkbox"><label class="">Invisible</label></br>
         </div>
-
         <div class="content-blocking-right">
-          <label>Spell lvl 6 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-          <button class="spell-slot-up">Up</button>
-          <button class="spell-slot-down">Down</button></br>
-      
-          <label>Spell lvl 7 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-          <button class="spell-slot-up">Up</button>
-          <button class="spell-slot-down">Down</button></br>
-      
-          <label>Spell lvl 8 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-          <button class="spell-slot-up">Up</button>
-          <button class="spell-slot-down">Down</button></br>
-      
-          <label>Spell lvl 9 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
-          <button class="spell-slot-up">Up</button>
-          <button class="spell-slot-down">Down</button></br>
+          <input type="checkbox"><label class="">Paralyzed</label></br>
+          <input type="checkbox"><label class="">Pertrified</label></br>
+          <input type="checkbox"><label class="">Poisoned</label></br>
+          <input type="checkbox"><label class="">Prone</label></br>
+          <input type="checkbox"><label class="">Restrained</label></br>
+          <input type="checkbox"><label class="">Stunned</label></br>
+          <input type="checkbox"><label class="">Unconcious</label></br>
         </div>
-        <button id="prepared-spell-list"  >This is a scroll bar for the prepared spells</button></br>
-        <button>This will be where the list of spells are</button>
+      </div>
+
+
+      <div class="spells-container">
+        <h3>Spells</h3>
+        <div class="content">
+          <div>Availible spell slots</div>
+          <div class="content-blocking-left">
+            <label>Spell lvl 1 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button></br>
+         
+            <label>Spell lvl 2 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button></br>
+          
+            <label>Spell lvl 3 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button></br>
+         
+            <label>Spell lvl 4 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button></br>
+         
+            <label>Spell lvl 5 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button></br>
+          </div>
+
+          <div class="content-blocking-right">
+            <label>Spell lvl 6 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button></br>
+        
+            <label>Spell lvl 7 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button></br>
+        
+            <label>Spell lvl 8 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button></br>
+        
+            <label>Spell lvl 9 - <span class="current-hit-points-value">0</span> / <span class="current-hit-points-value">3</span></label>
+            <button class="spell-slot-up">Up</button>
+            <button class="spell-slot-down">Down</button></br>
+          </div>
+          <button id="prepared-spell-list"  >This is a scroll bar for the prepared spells</button></br>
+          <button>This will be where the list of spells are</button>
+        </div>
       </div>
     </div>
   </div>
-
 
 
 
@@ -171,7 +182,7 @@
   <textarea class="user-input-body" placeholder="Enter the body of text"></textarea>
   <button class="add-text-btn">add text</button>
   <button class="del-text-btn">delete text</button> -->
-  </body>
+</body>
 </html>
 
 
