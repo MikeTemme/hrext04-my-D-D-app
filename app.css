@@ -2,63 +2,69 @@ body {
 	background-color: #d9dce0;
 }
 
-div, input, h3, #subtract-hit-die, #success, button {
-	margin-bottom: 5px;
-	margin-top: 5px;
-	margin-left: 10px;
-}
-.combat-stats {
-	background-color: white;
-
-    border-style: solid;
-	margin-bottom: 5px;
+* {
+	box-sizing: border-box;
 }
 
-.attacks-equipment-and-money {
-	background-color: white;
- 
-    border-style: solid;
-	margin-bottom: 5px;
-}
-
-.inventory {
-	background-color: white;
+/* Adding styling the the containers */
+.spells-container, .statuses-container, .attacks-equipment-and-money-container,
+.inventory-container, .combat-stats-container {
 	border-style: solid;
 	margin-bottom: 5px;
-	height: 105vh;
+	background-color: white;
 }
 
-.statuses {
-	background-color: white;
-	border-style: solid;
-	margin-bottom: 5px;
+.spells-container, .statuses-container, .attacks-equipment-and-money-container,
+.inventory-container, .combat-stats-container {
+	height: 50vh;
+};
+
+h3 {
+	text-align: center;
+	font-size: 30px;
+};
+
+
+#stuff {
+	/* Not Working*/
+	margin: 10px;
 }
 
-.spells {
-	background-color: #d9dce0;
-	border-style: solid;
-	margin-bottom: 20px;
-}
-.spell-sections {
-	background-color: white;
-	border-style: solid;
-	margin-bottom: 20px;
-}
-#prepared-spell-list {
-	border-style: solid;
-	margin: 4px;
-}
-.block-left, .block-center, .block-right{
+/* Aligning the containers on the page */
+.page-blocking-left, .page-blocking-center, .page-blocking-right{
     display: inline-block;
     vertical-align: top;
     margin: 0px;
     width: 33%
 }
-* {
-	box-sizing: border-box;
+
+/* Adding some spacing for the text in all the content sections */
+.content {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 10px;
 }
-.inner-block-left, .inner-block-right{
+
+.inventory-container {
+	height: 105vh;
+}
+
+/* Aligning the content text */
+.content-blocking-left, .content-blocking-right{
 	display: inline-block;
     vertical-align: top;
     width: 40%;
 }
+
+/*table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    align-self: ;
+    width: 92%;
+}
+
+td, th {
+    border: 1px solid #d9dce0;
+    text-align: left;
+    padding: 8px;
+}*/
