@@ -1,7 +1,10 @@
 body {
 	background-color: #d9dce0;
 }
-
+h3 {
+	text-align: center;
+	font-size: 30px;
+};
 * {
 	box-sizing: border-box;
 }
@@ -10,42 +13,35 @@ body {
 .spells-container, .statuses-container, .attacks-equipment-and-money-container,
 .inventory-container, .combat-stats-container {
 	border-style: solid;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 	background-color: white;
 }
 
-.spells-container, .statuses-container, .attacks-equipment-and-money-container,
-.inventory-container, .combat-stats-container {
-	height: 50vh;
-};
 
-h3 {
-	text-align: center;
-	font-size: 30px;
+.statuses-container, .combat-stats-container {
+	height: 700px;
 };
-
 
 #stuff {
-	/* Not Working*/
-	margin: 10px;
 }
+
 
 /* Aligning the containers on the page */
 .page-blocking-left, .page-blocking-center, .page-blocking-right{
     display: inline-block;
     vertical-align: top;
-    margin: 0px;
-    width: 33%
+    margin: 15px;
+    width: 31%
 }
 
 /* Adding some spacing for the text in all the content sections */
-.content {
+.content div, .content button, .content input, .content label {
 	margin-bottom: 5px;
 	margin-top: 5px;
 	margin-left: 10px;
 }
 
-.inventory-container {
+.inventory-container,.spells-container, .attacks-equipment-and-money-container {
 	height: 105vh;
 }
 
